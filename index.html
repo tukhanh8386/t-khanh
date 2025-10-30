@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức về Tự Khanh</title>
+    <style>
+        /* --- Tone màu pastel --- */
+        :root {
+            --color-bg: #fff9f9;
+            --color-header: #ffb6b9;
+            --color-nav: #ffd6d6;
+            --color-footer: #ffb6b9;
+            --color-button: #ffc3bf;
+            --color-text: #333;
+            --color-card: #fff0f0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--color-header);
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--color-nav);
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: bold;
+            padding: 12px 0;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        /* Main content */
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #ff6b6b;
+        }
+
+        /* Card tin tức */
+        .news-card {
+            background-color: var(--color-card);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .news-card h3 {
+            margin-top: 0;
+        }
+
+        /* Button */
+        button {
+            background-color: var(--color-button);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #ff9a95;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-footer);
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tin tức về Tự Khanh</h1>
+</header>
+
+<nav>
+    <a href="#home">Trang chủ</a>
+    <a href="#news">Tin tức</a>
+    <a href="#about">Giới thiệu</a>
+    <a href="#contact">Liên hệ</a>
+</nav>
+
+<main>
+    <!-- Trang chủ -->
+    <section id="home">
+        <h2>Chào mừng đến với trang tin Tự Khanh</h2>
+        <p>Trang web tổng hợp các tin tức, bài viết và thông tin mới nhất về Tự Khanh.</p>
+    </section>
+
+    <!-- Tin tức -->
+    <section id="news">
+        <h2>Tin mới</h2>
+        
+        <div class="news-card">
+            <h3>Bài viết 1</h3>
+            <p>Đây là nội dung tóm tắt của bài viết về Tự Khanh. Bạn có thể click nút bên dưới để xem chi tiết.</p>
+            <button onclick="showAlert('Bạn vừa mở bài viết 1')">Xem chi tiết</button>
+        </div>
+
+        <div class="news-card">
+            <h3>Bài viết 2</h3>
+            <p>Đây là nội dung tóm tắt của bài viết thứ 2 về Tự Khanh.</p>
+            <button onclick="showAlert('Bạn vừa mở bài viết 2')">Xem chi tiết</button>
+        </div>
+    </section>
+
+    <!-- Giới thiệu -->
+    <section id="about">
+        <h2>Giới thiệu</h2>
+        <p>Trang web được tạo ra để cập nhật thông tin về Tự Khanh một cách nhanh chóng, đầy đủ và dễ nhìn với tone màu pastel dễ chịu.</p>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="contact">
+        <h2>Liên hệ</h2>
+        <p>Email: contact@tukhanh.com</p>
+        <p>Facebook: fb.com/tukhanh</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Tin tức Tự Khanh</p>
+</footer>
+
+<script>
+    function showAlert(message) {
+        alert(message);
+    }
+</script>
+
+</body>
+</html>
